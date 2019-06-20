@@ -13,8 +13,6 @@ function mergeTwoSortedArrays(a, b) {
     let k = 0;
     let c = [];
     while (i < m && j < n) {
-        // console.log(i);
-        // console.log(j);
         if (a[i] < b[j]) {
             c[k] = a[i];
             i++;
@@ -26,14 +24,10 @@ function mergeTwoSortedArrays(a, b) {
         }
 
     }
-    console.log("here");
-    console.log(i);
-    console.log(m);
     while (i < m) {
         c[k] = a[i];
         i++;
     }
-    console.log("there");
     while (j < n) {
         c[k] = b[j];
         j++;
